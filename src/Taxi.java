@@ -39,7 +39,7 @@ public class Taxi {
     }
 
     public void print_taxi_info() {
-        //  Print Taxi Details
+        //   Print Taxi Details
         System.out.println("Taxi - "+ this.id + "Total Earnings - "+ this.total_earnings +" Current Spot "+ this.current_spot +" Free Time "+ this.free_time);
     }
 }

@@ -30,16 +30,19 @@ public class Taxi {
 
     public void print_info() {
         //   Trip Information
-        System.out.println("Taxi No " + this.id + " Total Earnings " + this.total_earnings);
-        System.out.println("Taxi Id   |   Booking Id   |   Customer Id   |   From   |   To   |   Pick Up   |   Drop   |   Amount   |");
+        System.out.println("Taxi No : " + this.id + " | Total Earnings : " + this.total_earnings);
+        System.out.println("");
+        System.out.println("Taxi Id   |   Booking Id   |Customer Id|  From  |     To   |  Pick Up   |    Drop   |     Amount   |");
         for (String trip : trips) {
             System.out.println(id + "                  " + trip);
         }
         System.out.println("--------------------------------------------------------------------------------------------------------");
+        System.out.println("");
     }
 
     public void print_taxi_info() {
         //   Print Taxi Details
-        System.out.println("Taxi - "+ this.id + "Total Earnings - "+ this.total_earnings +" Current Spot "+ this.current_spot +" Free Time "+ this.free_time);
+        System.out.println("");
+        System.out.println("Taxi : "+ this.id + " | Total Earnings : "+ this.total_earnings +" | Current Spot : "+ this.current_spot +" | Free Time : "+ this.free_time);
     }
 }

@@ -36,6 +36,7 @@ public class Booking {
         booked_taxi.set_details(true, que_spot, que_free, booked_taxi.total_earnings + earning , trip_detail);
 //        Successful Booking
         System.out.println("Taxi "+ booked_taxi.id +" booked");
+        System.out.println("");
     }
 
     public static List<Taxi> createTaxis(int n){
@@ -71,6 +72,9 @@ public class Booking {
         while(true) {
             System.out.println("0 - Book Taxi");
             System.out.println("1 - Taxi Info");
+            System.out.println("");
+            System.out.println("Select Your Required Option . ");
+            System.out.println("");
             int choice = s.nextInt();
             switch (choice) {
                 case 0: {
@@ -87,6 +91,7 @@ public class Booking {
                     //check if pickup and drop points are valid
                     if (pickup < 'A' || drop > 'F' || pickup > 'F' || drop < 'A') {
                         System.out.println("Valid pickup and drop are A, B, C, D, E, F. Thank You ");
+                        System.out.println("");
                         return;
                     }
                     // get all free taxis that can reach customer on or before pickup time
@@ -95,6 +100,7 @@ public class Booking {
                     //no free taxi means we cannot allot, exit!
                     if (freeTaxis.size() == 0) {
                         System.out.println("No Taxi can be Allotted . Thank You");
+                        System.out.println("");
                         return;
                     }
 
